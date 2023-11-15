@@ -1,0 +1,52 @@
+.welcomePageBg{
+    background-color: #13131F;
+    height: 100vh;
+    max-height: 100vh;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.centerContainer{
+    position: relative;
+    flex-basis: 90%;
+    padding: 50px;
+    max-height: 65vh;
+    height: 75vh;
+    background-color: #13131F;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.centerContainer::before{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 50vh;
+    background: linear-gradient(180deg, rgb(221, 255, 0), rgb(221, 255, 0), rgb(173, 2, 150), rgb(173, 2, 150));
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.centerContainer::after{
+    content: "";
+    position: absolute;
+    background-color: #13131F;
+    inset: 15px;
+    border-radius: inherit;
+}
+h1{
+    z-index: 2;
+    color: white;
+    font-size: 100px;
+}
