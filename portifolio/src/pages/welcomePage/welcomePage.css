@@ -10,12 +10,12 @@ code {
 }
 
 .welcomePageBg {
+    align-items: center;
     height: 100vh;
     max-height: 100vh
 }
 
 .centerContainer,.welcomePageBg {
-    align-items: center;
     background-color: #13131f;
     display: flex;
     justify-content: center;
@@ -28,7 +28,8 @@ code {
     height: 75vh;
     max-height: 65vh;
     padding: 50px;
-    position: relative
+    position: relative;
+    z-index: 1;
 }
 
 .centerContainer:before {
@@ -110,10 +111,36 @@ code {
     position: absolute
 }
 
-h1 {
+h1, p, h3{
     color: #fff;
-    font-size: 100px;
-    z-index: 2
+}
+
+h1 {
+    font-size: 75px;
+    padding-left: 3vw;
+}
+
+p{
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.content{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    height: 60%;
+    width: 10%;
+}
+
+.logo_div{
+    height: 10%;
+    top: 0;
+    right: 0;
+    padding-bottom: 10vh;
 }
 
 /*# sourceMappingURL=main.e70d39a8.css.map*/
