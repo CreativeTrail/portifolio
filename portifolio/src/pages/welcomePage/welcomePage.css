@@ -185,4 +185,43 @@ h1 {
 .link_projeto{
     padding-left: 3vw;
 }
+
+.redes_sociais{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+}
+.redes_sociais li{
+    margin-left: 1em;
+    font-size: 1.5em;
+    animation: redes_sociais_inverso 0.3s;
+    cursor: pointer;
+}
+
+.redes_sociais li:hover{
+    color: #2c94b7;
+    font-size: 2em;
+    animation: redes_sociais_hover 1s;
+}
+
+@keyframes redes_sociais_hover {
+    from{
+        font-size: 1.5em;
+    }
+    to {
+        font-size: 2em;
+    }
+}
+
+@keyframes redes_sociais_inverso {
+    from{
+        font-size: 2em;
+    }
+    to {
+        font-size: 1.5em;
+    }
+}
+
+
 /*# sourceMappingURL=main.e70d39a8.css.map*/

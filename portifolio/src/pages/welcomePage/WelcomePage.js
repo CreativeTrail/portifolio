@@ -1,5 +1,8 @@
 import React from 'react';
 import './welcomePage.css'
+import { SiInstagram } from "react-icons/si";
+import { SiGithub } from "react-icons/si";
+import { SiGmail } from "react-icons/si";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -20,7 +23,18 @@ function WelcomePage (){
                         <h1>Welcome!</h1> 
                     </Col>
                     <Col>
-                        <h3>redes sociais</h3> 
+                    <ul className='redes_sociais'>
+                        <li>
+                        <SiInstagram/>
+                        </li>
+                        <li>
+                        <SiGithub/> 
+                        </li>
+                        <li>
+                        <SiGmail/>
+                        </li>
+                    </ul>
+                        
                     </Col>
                 </Row>
                 <Row>
