@@ -18,17 +18,40 @@ function WelcomePage (){
                 <Row>
                     <Col className='col-8'>
                         <h1>Welcome!</h1> 
-                        <div>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim tellus, sodales aliquet justo dictum, ornare sollicitudin leo. Aenean aliquam rhoncus lectus. Donec blandit et turpis in pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sed felis massa. Donec sem elit, varius nec porttitor eu, sagittis eget felis. Proin at erat non metus tristique dapibus ut non justo. Aenean at magna ipsum. Praesent a lorem nec urna congue gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pharetra augue at dui vehicula efficitur. Aenean at dolor nisi. Duis consectetur luctus rhoncus.
-
-                                Mauris ullamcorper semper suscipit. Fusce sed lacus porta dui tincidunt semper. Nunc gravida ac tortor sit amet sodales. Nullam quis ornare nibh, nec semper nulla. Cras fringilla suscipit justo, sit amet ultrices mauris vulputate eget. Nunc at velit id arcu accumsan aliquet a eu libero. Nullam tincidunt purus ante.
-                            </p>
-                        </div>
-                         
                     </Col>
                     <Col>
-                        <h3>Menu de projects</h3> 
+                        <h3>redes sociais</h3> 
+                    </Col>
+                </Row>
+                <Row>
+                    <Col className='col-1 posicao_paragrafo'>
+                        <div className='div_paragrafo'></div>
+                    </Col>
+                    <Col className='col-6'>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim tellus, sodales aliquet justo dictum, ornare sollicitudin leo. Aenean aliquam rhoncus lectus. Donec blandit et turpis in pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sed felis massa. Donec sem elit, varius nec porttitor eu, sagittis eget felis. Proin at erat non metus tristique dapibus ut non justo. Aenean at magna ipsum. Praesent a lorem nec urna congue gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pharetra augue at dui vehicula efficitur. Aenean at dolor nisi. Duis consectetur luctus rhoncus.
+                        </p>
+                    </Col>
+                    <Col className='posicao_menu_projects'>
+                        <h3>Projetos</h3>
+                        <Col className='link_projeto'>
+                            <Row>
+                                <p>
+                                    projeto 1
+                                </p>
+                            </Row> 
+                            <Row>
+                                <p>
+                                    projeto 2
+                                </p>
+                            </Row> 
+                            <Row>
+                                <p>
+                                    projeto 3
+                                </p>
+                            </Row> 
+                        </Col>
+                        
                     </Col>
                 </Row>
             </div>
