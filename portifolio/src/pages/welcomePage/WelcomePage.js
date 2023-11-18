@@ -37,13 +37,11 @@ function WelcomePage (){
                         
                     </Col>
                 </Row>
-                <Row>
-                    <Col className='col-1 posicao_paragrafo'>
+                <Row className='display_conteudo'>
+                    <Col className='col-8 posicao_paragrafo'>
                         <div className='div_paragrafo'></div>
-                    </Col>
-                    <Col className='col-6'>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim tellus, sodales aliquet justo dictum, ornare sollicitudin leo. Aenean aliquam rhoncus lectus. Donec blandit et turpis in pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sed felis massa. Donec sem elit, varius nec porttitor eu, sagittis eget felis. Proin at erat non metus tristique dapibus ut non justo. Aenean at magna ipsum. Praesent a lorem nec urna congue gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce pharetra augue at dui vehicula efficitur. Aenean at dolor nisi. Duis consectetur luctus rhoncus.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed enim tellus, sodales aliquet justo dictum, ornare sollicitudin leo. Aenean aliquam rhoncus lectus. Donec blandit et turpis in pharetra. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Proin sed felis massa. Donec sem elit, varius nec porttitor eu, sagittis eget felis.
                         </p>
                     </Col>
                     <Col className='posicao_menu_projects'>
