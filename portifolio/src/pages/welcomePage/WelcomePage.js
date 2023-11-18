@@ -13,14 +13,9 @@ function WelcomePage (){
     <div className='welcomePageBg'>
         <Container fluid className='centerContainer'>
             <div className='content'>
-                <Row className='logo_div'>
-                    <Col>
-                        <img src={Logo} alt='vazio' className="logo" /> 
-                    </Col>
-                </Row>
                 <Row>
-                    <Col className='col-8'>
-                        <h1>Welcome!</h1> 
+                <Col className='col-8 logo_div'>
+                        <img src={Logo} alt='vazio' className="logo" /> 
                     </Col>
                     <Col>
                     <ul className='redes_sociais'>
@@ -36,6 +31,13 @@ function WelcomePage (){
                     </ul>
                         
                     </Col>
+                </Row>
+                    
+                <Row>
+                    <Col className='col-7'>
+                        <h1>Welcome!</h1> 
+                    </Col>
+                    
                 </Row>
                 <Row className='display_conteudo'>
                     <Col className='col-8 posicao_paragrafo'>

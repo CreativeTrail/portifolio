@@ -12,11 +12,11 @@ code {
 .welcomePageBg {
     align-items: center;
     height: 100vh;
-    max-height: 100vh
+    max-height: 100vh;
+    background-color: #13131f;
 }
 
 .centerContainer,.welcomePageBg {
-    background-color: #13131f;
     display: flex;
     justify-content: center;
     overflow: hidden
@@ -30,6 +30,7 @@ code {
     padding: 50px;
     position: relative;
     z-index: 1;
+    background-color: #13131f;
 }
 
 .centerContainer:before {
@@ -104,7 +105,7 @@ code {
 }
 
 .centerContainer:after {
-    background-color: #13131f;
+    background-color: #000000;
     border-radius: inherit;
     content: "";
     inset: 15px;
@@ -125,7 +126,7 @@ p{
 h1 {
     font-size: 3em;
     padding-left: 3vw;
-    padding-bottom: 3vh;
+    padding-top: 2vh;
 }
 
 .div_paragrafo{
@@ -133,8 +134,8 @@ h1 {
     overflow: hidden;
     border-radius: 30px;
     flex-basis: 9%;
-    height: 100vh;
-    max-height: 20vh;
+    height: 100%;
+    max-height: 90%;
     max-width: 1vw;
     position: relative;
     z-index: 1;
@@ -173,17 +174,10 @@ h1 {
     width: 5rem;
 }
 
-.logo_div{
-    height: 10%;
-    top: 0;
-    right: 0;
-    padding-bottom: 10vh;
-    position: relative;
-}
-
 .posicao_paragrafo{
-    padding-left: 5vw;
+    padding-left: 2vw;
     display: flex;
+    align-items: center;
 }
 
 .posicao_menu_projects{
@@ -201,13 +195,14 @@ h1 {
     color: white;
 }
 .redes_sociais li{
-    margin-left: 1em;
+    padding-left: 1em;
     font-size: 1.5em;
-    animation: redes_sociais_inverso 0.3s;
+    animation: redes_sociais_inverso 1s;
     cursor: pointer;
 }
 
 .redes_sociais li:hover{
+    padding-left: 1em;
     color: #2c94b7;
     font-size: 2em;
     animation: redes_sociais_hover 1s;
@@ -225,9 +220,11 @@ h1 {
 @keyframes redes_sociais_inverso {
     from{
         font-size: 2em;
+        color: #2c94b7;
     }
     to {
         font-size: 1.5em;
+        color: white;
     }
 }
 
@@ -235,6 +232,7 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 2vh;
 }
 
 
