@@ -1,0 +1,280 @@
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    margin: 0
+}
+
+code {
+    font-family: source-code-pro,Menlo,Monaco,Consolas,Courier New,monospace
+}
+
+.loadingPageBg {
+    align-items: center;
+    height: 100vh;
+    max-height: 100vh
+}
+
+.ContainerCentral,.loadingPageBg {
+    background-color: #13131f;
+    display: flex;
+    justify-content: center;
+    overflow: hidden
+}
+
+.ContainerCentral {
+    border-radius: 100%;
+    flex-basis: 300px;
+    height: 300px;
+    max-height: 65vh;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerCentral:before {
+    animation: AlturaCirculo 10s ease-out infinite, animate 5s linear infinite, gradientAnimation 10s linear infinite;
+    background: linear-gradient(180deg,#df0,#ad0296,#2c94b7, #3f6c39);
+    content: "";
+    position: absolute;
+    width: 200%;
+    background-size: 600% 600%;
+}
+
+.ContainerCentral:after {
+    animation: AnimacaoCarregando 8s linear infinite;
+    background-color: #13131f;
+    border-radius: inherit;
+    inset: 15px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    content: "";
+}
+
+
+@keyframes animate {
+    to {
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes AlturaCirculo {
+    0% {
+        height: 50%;
+        font-size: 2;
+    }
+    
+    50% {
+        height: 70%;
+        font-size: 2.5;
+    }
+
+    100% {
+        height: 50%;
+        font-size: 2;
+    }
+}
+
+@keyframes AnimacaoCarregando {
+    0% {
+        content: "Carregando";
+    }
+    
+    5% {
+        content: "Carregando.";
+    }
+
+    25% {
+        content: "Carregando..";
+    }
+
+    45% {
+        content: "Carregando...";
+    }
+
+    65% {
+        content: "Carregando..";
+    }
+    
+    85% {
+        content: "Carregando.";
+    }
+    100% {
+        content: "Carregando";
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 15%;
+    }
+
+    10% {
+        background-position: 15% 30%
+    }
+
+    20% {
+        background-position: 30% 45%
+    }
+
+    30% {
+        background-position: 45% 60%
+    }
+
+    40%{
+        background-position: 60% 75%
+    }
+
+    50% {
+        background-position: 75% 90%;
+    }
+
+    60%{
+        background-position: 90% 100%
+    }
+    
+    70% {
+        background-position: 75% 90%
+    }
+
+    80%{
+        background-position: 60% 75%
+    }
+
+    85% {
+        background-position: 45% 60%
+    }
+
+    90% {
+        background-position: 30% 45%
+    }
+
+    95%{
+        background-position: 15% 30%
+    }
+    
+    100% {
+        background-position: 0% 15%;
+    }
+}
+
+h1, p, h3{
+    color: #fff;
+    z-index: 2;
+}
+
+h1 {
+    font-size: 75px;
+    padding-left: 3vw;
+    padding-bottom: 3vh;
+}
+
+.div_paragrafo{
+    margin-left: 1vw;
+    overflow: hidden;
+    border-radius: 30px;
+    flex-basis: 9%;
+    height: 100vh;
+    max-height: 20vh;
+    max-width: 1vw;
+    position: relative;
+    z-index: 1;
+}
+
+.div_paragrafo:before {
+    animation: auto;
+    animation: gradientAnimation 30s ease infinite;
+    background: linear-gradient(180deg,#df0,#ad0296,#2c94b7);
+    content: "";
+    height: 50vh;
+    position: absolute;
+    width: 200%;
+    background-size: 600% 600%;
+    z-index: 0;
+}
+
+.div_paragrafo:after {
+    border-radius: inherit;
+    content: "";
+    inset: 15px;
+    width: 1vw;
+    position: absolute;
+    background-color: #13131f;
+    
+}
+
+.conteudo{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    height: 5rem;
+    width: 5rem;
+}
+
+.logo_div{
+    height: 10%;
+    top: 0;
+    right: 0;
+    padding-bottom: 10vh;
+}
+
+.posicao_paragrafo{
+    padding-left: 5vw;
+}
+
+.posicao_menu_projects{
+    padding-left: 8vw;
+}
+
+.link_projeto{
+    padding-left: 3vw;
+}
+
+.redes_sociais{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    color: white;
+}
+.redes_sociais li{
+    margin-left: 1em;
+    font-size: 1.5em;
+    animation: redes_sociais_inverso 0.3s;
+    cursor: pointer;
+}
+
+.redes_sociais li:hover{
+    color: #2c94b7;
+    font-size: 2em;
+    animation: redes_sociais_hover 1s;
+}
+
+@keyframes redes_sociais_hover {
+    from{
+        font-size: 1.5em;
+    }
+    to {
+        font-size: 2em;
+    }
+}
+
+@keyframes redes_sociais_inverso {
+    from{
+        font-size: 2em;
+    }
+    to {
+        font-size: 1.5em;
+    }
+}
+
+
+/*# sourceMappingURL=main.e70d39a8.css.map*/
