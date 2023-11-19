@@ -23,7 +23,7 @@ code {
 }
 
 .centerContainer {
-    border-radius: 30px;
+    border-radius: 100px;
     flex-basis: 90%;
     height: 75vh;
     max-height: 65vh;
