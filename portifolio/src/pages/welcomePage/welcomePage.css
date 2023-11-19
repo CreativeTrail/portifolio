@@ -131,16 +131,18 @@ p{
     position: relative;
     max-width: 45vw;
     padding-left: 2vw;
+    cursor: default;
 }
 
 .h1 {
     font-size: 3em;
     padding-left: 3vw;
     padding-top: 2vh;
+    cursor: default;
 }
 .h1:hover{
     -webkit-animation: swing 1s ease;
-    animation: swing 1s ease;
+    animation: swing 1s ease infinite;
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
