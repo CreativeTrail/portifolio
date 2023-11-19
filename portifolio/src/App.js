@@ -1,5 +1,6 @@
 
 import { Route,Routes, BrowserRouter } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import WelcomePage from "./pages/welcomePage/WelcomePage";
 
 function App() {
