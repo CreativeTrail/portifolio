@@ -112,7 +112,7 @@ code {
     position: absolute
 }
 
-h1, p, h3{
+.h1, p, h3{
     color: #fff;
     z-index: 2;
 }
@@ -123,7 +123,7 @@ p{
     padding-left: 2vw;
 }
 
-h1 {
+.h1 {
     font-size: 3em;
     padding-left: 3vw;
     padding-top: 2vh;

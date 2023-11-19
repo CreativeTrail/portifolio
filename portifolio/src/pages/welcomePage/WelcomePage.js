@@ -1,4 +1,5 @@
 import React from 'react';
+import { EscritaAutomatica } from "../../components/EscritaAutomatica"
 import './welcomePage.css'
 import { SiInstagram } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
@@ -9,6 +10,9 @@ import Col from 'react-bootstrap/Col';
 import Logo from './imagens/logo.png'
 
 function WelcomePage (){
+
+    const escrita = {tempo: 250, text:"Welcome!"}
+
   return (
     <div className='welcomePageBg'>
         <Container fluid className='centerContainer'>
@@ -20,13 +24,13 @@ function WelcomePage (){
                     <Col>
                     <ul className='redes_sociais'>
                         <li>
-                        <SiInstagram/>
+                            <SiInstagram/>
                         </li>
                         <li>
                         <SiGithub/> 
-                        </li>
+                            </li>
                         <li>
-                        <SiGmail/>
+                            <SiGmail/>
                         </li>
                     </ul>
                         
@@ -34,8 +38,10 @@ function WelcomePage (){
                 </Row>
                     
                 <Row>
-                    <Col className='col-7'>
-                        <h1>Welcome!</h1> 
+                    <Col className='col-7 h1'>
+                        <EscritaAutomatica
+                            props={escrita}
+                        />
                     </Col>
                     
                 </Row>
@@ -48,7 +54,7 @@ function WelcomePage (){
                     </Col>
                     <Col className='posicao_menu_projects'>
                         <h3>Projetos</h3>
-                        <Col className='link_projeto'>
+                        <Col className='link_projeto card'>
                             <Row>
                                 <p>
                                     projeto 1
