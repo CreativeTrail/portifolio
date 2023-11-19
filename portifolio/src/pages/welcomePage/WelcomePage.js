@@ -4,6 +4,8 @@ import './welcomePage.css'
 import { SiInstagram } from "react-icons/si";
 import { SiGithub } from "react-icons/si";
 import { SiGmail } from "react-icons/si";
+import { FaAngleDown } from "react-icons/fa6";
+import { FaAnglesUp } from "react-icons/fa6";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -53,23 +55,13 @@ function WelcomePage (){
                         </p>
                     </Col>
                     <Col className='posicao_menu_projects'>
-                        <h3>Projetos</h3>
-                        <Col className='link_projeto card'>
-                            <Row>
-                                <p>
-                                    projeto 1
-                                </p>
-                            </Row> 
-                            <Row>
-                                <p>
-                                    projeto 2
-                                </p>
-                            </Row> 
-                            <Row>
-                                <p>
-                                    projeto 3
-                                </p>
-                            </Row> 
+                        <Col className='srolldownMessage'>
+                            <p className='escrita_vertical'><FaAnglesUp className='escrita_vertical'/> Scroll Down</p>
+                        </Col>
+                        <Col >
+                        <button class="botao">
+                            <span>Sobre nós    <FaAngleDown /></span>
+                        </button>
                         </Col>
                         
                     </Col>

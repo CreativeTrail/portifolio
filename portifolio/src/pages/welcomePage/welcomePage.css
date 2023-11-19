@@ -117,6 +117,16 @@ code {
     z-index: 2;
 }
 
+.escrita_vertical{
+    transform: rotate(-90deg);
+    cursor: pointer;
+}
+@media screen and (max-width:600px){
+    .escrita_vertical {
+        display:none;
+    }
+}
+
 p{
     position: relative;
     max-width: 45vw;
@@ -184,10 +194,6 @@ p{
     padding-left: 8vw;
 }
 
-.link_projeto{
-    padding-left: 3vw;
-}
-
 .redes_sociais{
     display: flex;
     justify-content: center;
@@ -234,6 +240,40 @@ p{
     flex-wrap: wrap;
     padding-top: 2vh;
 }
+
+.srolldownMessage{
+    position: fixed;
+    right: 3vw;
+    bottom: 30vh;
+}
+
+.botao {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #2c94b7;
+    border-radius: 20px;
+    outline: none;
+    transition: 1s ease-in-out;
+  }
+  
+  .botao:hover {
+    transition: 1s ease-in-out;
+    background: #2c94b7;
+  }
+  
+  .botao span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+  }
+
+  @media screen and (max-width:1000px){
+        .botao {
+            display:none;
+        }
+    }
 
 
 /*# sourceMappingURL=main.e70d39a8.css.map*/
