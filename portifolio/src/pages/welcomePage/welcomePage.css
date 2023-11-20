@@ -229,18 +229,25 @@ p{
     list-style: none;
     color: white;
 }
-.redes_sociais li{
-    padding-left: 1em;
-    font-size: 1.5em;
-    animation: redes_sociais_inverso 1s;
+
+.redes_sociais_div {
     cursor: pointer;
+    display: flex;
+    padding-left: 1em;
+    overflow: hidden;
+    height: 60px;
 }
 
-.redes_sociais li:hover{
-    padding-left: 1em;
+.redes_sociais li{
+    transition: .3s;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.redes_sociais .redes_sociais_div:hover li {
     color: #2c94b7;
-    font-size: 2em;
-    animation: redes_sociais_hover 1s;
+    height: fit-content;
+    font-size: 40px;
 }
 
 @keyframes redes_sociais_hover {

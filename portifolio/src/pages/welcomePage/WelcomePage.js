@@ -25,15 +25,21 @@ function WelcomePage (){
                     </Col>
                     <Col>
                     <ul className='redes_sociais'>
-                        <li>
-                            <SiInstagram/>
-                        </li>
-                        <li>
-                        <SiGithub/> 
+                        <div className='redes_sociais_div'>
+                            <li>
+                                <SiInstagram/>
                             </li>
-                        <li>
-                            <SiGmail/>
-                        </li>
+                        </div>
+                        <div className='redes_sociais_div'>
+                            <li>
+                                <SiGithub/> 
+                            </li>
+                        </div>
+                        <div className='redes_sociais_div'>
+                            <li>
+                                <SiGmail/>
+                            </li>
+                        </div>
                     </ul>
                         
                     </Col>
