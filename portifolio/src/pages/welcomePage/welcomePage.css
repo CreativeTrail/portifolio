@@ -233,7 +233,7 @@ p{
 .redes_sociais_div {
     cursor: pointer;
     display: flex;
-    padding-left: 1em;
+    padding-left: 2em;
     overflow: hidden;
     height: 60px;
 }
