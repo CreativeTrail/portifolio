@@ -1,11 +1,12 @@
 import React from 'react';
-import { EscritaAutomatica } from "../../components/EscritaAutomatica"
+import { EscritaAutomatica } from "../../utils/EscritaAutomatica"
 import './welcomePage.css'
-import { SiInstagram } from "react-icons/si";
-import { SiGithub } from "react-icons/si";
-import { SiGmail } from "react-icons/si";
-import { FaAngleDown } from "react-icons/fa6";
-import { FaAnglesUp } from "react-icons/fa6";
+import { 
+    SiInstagram, 
+    SiGithub,
+    SiGmail
+} from "react-icons/si";
+import { FaAngleDown, FaAnglesUp } from "react-icons/fa6";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -59,7 +60,7 @@ function WelcomePage (){
                             <p className='escrita_vertical'><FaAnglesUp className='escrita_vertical'/> Scroll Down</p>
                         </Col>
                         <Col >
-                        <button class="botao">
+                        <button className="botao">
                             <span>Sobre nós    <FaAngleDown /></span>
                         </button>
                         </Col>
